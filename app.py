@@ -3,7 +3,7 @@ import google.generativeai as genai
 import json
 
 # ================= CONFIGURATION =================
-GOOGLE_API_KEY = "AIzaSyBHDeXSODJ3ZOy54fw-s4Z9jvdWEvUyBQI"
+GOOGLE_API_KEY = st.secrets["AIzaSyBHDeXSODJ3ZOy54fw-s4Z9jvdWEvUyBQI"]
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # ================= DEFAULT NOTES =================
@@ -158,3 +158,4 @@ if st.session_state.quiz_data:
         if st.button("📝 Submit Exam"):
             st.session_state.submitted = True
             st.rerun()
+
