@@ -131,7 +131,7 @@ You are a university-level exam paper setter (MSc / NET standard).
 
 TASK:
 1. Analyze the PYQs to understand difficulty & pattern.
-2. Generate exactly 5 NEW MCQs from the NOTES matching the SAME pattern.
+2. Generate exactly 10 NEW MCQs from the NOTES matching the SAME pattern.
 
 RULES:
 - Application-based, exam-oriented
@@ -424,6 +424,7 @@ st.markdown("""
     <p>🎓 Powered by Google Gemini AI | Made with ❤️ for serious exam preparation</p>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
