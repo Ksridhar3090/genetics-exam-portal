@@ -124,7 +124,7 @@ CELL SIGNALING & COMMUNICATION
 
 # ================= AI FUNCTION =================
 def get_quiz_data(notes, pyqs):
-    model = genai.GenerativeModel("gemini-2.5-flash-lite")
+    model = genai.GenerativeModel("gemini-2.5-flash-native-audio")
 
     prompt = f"""
 You are a university-level exam paper setter (MSc / NET standard).
@@ -424,6 +424,7 @@ st.markdown("""
     <p>🎓 Powered by Google Gemini AI | Made with ❤️ for serious exam preparation</p>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
