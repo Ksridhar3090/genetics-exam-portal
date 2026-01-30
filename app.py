@@ -3,8 +3,8 @@ import google.generativeai as genai
 import json
 
 # ================= CONFIGURATION =================
-client = genai.Client(http_options={'api_version': 'v1alpha'})
-model_id = "gemini-2.5-flash-native-audio"
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+genai.configure(api_key=GOOGLE_API_KEY)
 
 # ================= EMBEDDED COURSE DATA =================
 COURSE_DATA = {
@@ -424,5 +424,6 @@ st.markdown("""
     <p>🎓 Powered by Google Gemini AI | Made with ❤️ for serious exam preparation</p>
 </div>
 """, unsafe_allow_html=True)
+
 
 
